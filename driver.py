@@ -31,6 +31,8 @@ if __name__ == '__main__':
     args = parse_args()
 
     configuration = args.pipeline
+    #I added this- ajay
+    print(configuration)
     with open(configuration, 'r') as y:
         config = yaml.load(y, Loader=yaml.FullLoader)
 
